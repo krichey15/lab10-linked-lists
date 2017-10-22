@@ -6,6 +6,7 @@ const LinkedList = require('./linkedlist.js');
 LinkedList.prototype.remove = module.exports = function(value) {
   if(!this.head){
     console.log('Nothing to remove');
+    return;
   }
 
   if(this.head.value === value){
