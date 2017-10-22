@@ -5,9 +5,8 @@ const LinkedList = require('./linkedlist.js');
 
 LinkedList.prototype.reverse = module.exports = function() {
 
-  if(!this.head || !this.next){
-    console.log('Nothing to reverse');
-    return;
+  if(this.head === null){
+    throw new Error('Nothing to reverse.');
   }
 
   let positionOne = null;

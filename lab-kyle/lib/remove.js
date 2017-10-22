@@ -5,8 +5,7 @@ const LinkedList = require('./linkedlist.js');
 
 LinkedList.prototype.remove = module.exports = function(value) {
   if(!this.head){
-    console.log('Nothing to remove');
-    return;
+    throw new Error('Nothing to remove.');
   }
 
   if(this.head.value === value){
@@ -25,7 +24,5 @@ LinkedList.prototype.remove = module.exports = function(value) {
       postitionTwo = postitionTwo.next;
     }
   }
-
-  this.numOf--;
 
 };

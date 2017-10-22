@@ -16,5 +16,4 @@ LinkedList.prototype.append = module.exports = function (value) {
 
   currentP.next = new Element(value);
 
-  this.numOf++;
 };
