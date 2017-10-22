@@ -26,3 +26,5 @@ LinkedList.prototype.remove = module.exports = function(value) {
   }
 
 };
+
+//O(n)

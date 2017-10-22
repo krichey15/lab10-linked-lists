@@ -8,3 +8,4 @@ LinkedList.prototype.prepend = module.exports = function (value) {
   this.head = new Element(value, oldHead);
 
 };
+//O(1)

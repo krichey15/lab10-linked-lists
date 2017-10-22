@@ -22,3 +22,5 @@ LinkedList.prototype.reverse = module.exports = function() {
 
   this.head = positionOne;
 };
+
+//O(n^2)
