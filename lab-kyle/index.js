@@ -7,14 +7,12 @@ const prepend = require('./lib/prepend.js');
 const remove = require('./lib/remove.js');
 const reverse = require('./lib/reverse.js');
 
-let sampleOne = new Element(1);
-console.log('Sample One: ', sampleOne);
+let sampleList = new LinkedList();
+sampleList.append(1);
+sampleList.append(2);
+sampleList.append(3);
+sampleList.append(4);
 
-let sampleTwo = new Element(2);
-console.log('Sample Two: ', sampleTwo);
-
-let sampleList = new LinkedList(sampleOne);
-sampleList.append(sampleTwo);
 console.log('Sample List: ', sampleList);
 
 sampleList.reverse();

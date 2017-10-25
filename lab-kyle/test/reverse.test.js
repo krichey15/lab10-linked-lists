@@ -24,17 +24,21 @@ describe('reverse module', function(){
     testList2.append(1);
     testList2.append(2);
     testList2.append(3);
+    testList2.append(4);
 
     testList2.reverse();
 
     expect(testList2).toEqual({
       head: {
-        value: 3,
+        value: 4,
         next: {
-          value: 2,
+          value: 3,
           next: {
-            value: 1,
-            next: null,
+            value: 2,
+            next: {
+              value: 1,
+              next: null,
+            },
           },
         },
       },
