@@ -26,3 +26,12 @@ LinkedList.prototype.append = function(value){
     current.next = new Node(value);
 };
 
+// Remove a node from the list.
+LinkedList.prototype.remove = function(index){
+    let current = this.head;
+
+    for(let i = 1; i < index - 1; i++){
+        current = current.next;
+    }
+    current.next = current.next.next;
+}
