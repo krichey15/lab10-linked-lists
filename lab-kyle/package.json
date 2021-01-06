@@ -1,0 +1,27 @@
+{
+  "name": "data-structures",
+  "version": "0.0.1",
+  "description": "Practicing data structures",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krichey15/lab10-linked-lists.git"
+  },
+  "author": "kyle@kyle-richey.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krichey15/lab10-linked-lists/issues"
+  },
+  "homepage": "https://github.com/krichey15/lab10-linked-lists#readme",
+  "dependencies": {
+    "expect": "^26.6.2",
+    "mocha": "^8.2.1"
+  }
+}
